@@ -4,10 +4,13 @@
 #include "delay.h"
 
 #define PWM(n)  (int)(204.8 * (0.5 + n * 1.0 / 90))
-#define SPEED 40
+#define SPEED 20
 
 void motionless(void);
 void forward(void);
+void backup(void);
+void left(void);
+void right(void);
 void dowm();
 
 

@@ -104,17 +104,19 @@ int main(void)
 	{
 		u16 pwm = calculate_PWM(80);
 		printf("hello\r\n");
-		/*for (int i = 100; i >= 80; i--)
+		
+		/*for (int i = 85; i >= 75; i--)
 		{
-			setPWM(10, 0, PWM(i));
+			setPWM(0, 0, PWM(i));
 			delay_ms(60);
 		}
-		for (int i = 80; i <= 100; i++)
+		for (int i = 75; i <= 85; i++)
 		{
-			setPWM(10, 0, PWM(i));
+			setPWM(0, 0, PWM(i));
 			delay_ms(60);
 		}*/
-		forward();
+		left();
+		//forward();();
 		//delay_ms(500);
 	}
 }
