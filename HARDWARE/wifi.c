@@ -1,6 +1,7 @@
 #include "wifi.h"
 
-u8 dat = 0;
+u8 dat = 0x7A;
+u8 cou = 0;
 
 /* USART6初始化 */
 void Usart6Init(void)
@@ -48,5 +49,7 @@ void USART2_IRQHandler()
 	if (USART_GetITStatus(USART2, USART_IT_RXNE))
 	{
 		dat = USART_ReceiveData(USART2);
+		if (dat == 0x69)
+			cou++;
 	}
 }

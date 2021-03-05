@@ -7,6 +7,7 @@
 #include <misc.h>
 
 extern u8 dat;
+extern u8 cou;
 
 void Usart6Init(void);
 
